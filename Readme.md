@@ -274,7 +274,7 @@ This project uses multiple reporters for comprehensive test insights:
 ### 1. **HTML Report** (Default)
 
 ```bash
-npm run show-report
+npx playwright show-report
 ```
 
 ### 2. **JSON Report**
