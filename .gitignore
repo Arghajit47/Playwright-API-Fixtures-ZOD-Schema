@@ -1,0 +1,13 @@
+node_modules/
+/test-results/
+/playwright-report/
+/pulse-report/
+/blob-report/
+/playwright/.cache/
+
+/helpers/api-helper.js
+/helpers/page.js
+/fixtures/api-fixture.js
+/schemas/schema.js
+/tests/api.test.spec.js
+/tests/demo-todo-app.spec.js
