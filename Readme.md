@@ -54,10 +54,11 @@ npx playwright test --ui
 npx playwright test --grep @API
 ```
 
-### View Test Report
+### Generate and View Test Report
 
 ```bash
-npx playwright show-report
+npm run report-pulse
+open pulse-report/playwright-pulse-static-report.html
 ```
 
 ---
@@ -273,7 +274,7 @@ This project uses multiple reporters for comprehensive test insights:
 ### 1. **HTML Report** (Default)
 
 ```bash
-npx playwright show-report
+npm run show-report
 ```
 
 ### 2. **JSON Report**
@@ -370,8 +371,11 @@ npm install
 # Run API tests
 npm run test:API
 
-# View report
-npx playwright show-report
+# Generate Report
+npm run report-pulse
+
+# View Report
+open pulse-report/playwright-pulse-static-report.html
 
 # Learn about fixtures
 cat fixtures.md
