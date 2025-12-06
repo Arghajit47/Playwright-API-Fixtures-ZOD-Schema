@@ -40,12 +40,27 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
+    screenshot: "only-on-failure",
   },
 
   /* Configure projects for major browsers */
   projects: [
     {
-      name: "chromium",
+      name: "CHROME - API TEST",
+      grep: /@API/,
+      use: {
+        ...devices["Desktop Chrome"],
+        launchOptions: {
+          slowMo: 1500,
+          timeout: 300000,
+          headless: true,
+        },
+      },
+    },
+
+    {
+      name: "CHROME - UI TEST",
+      grep: /@UI/,
       use: {
         ...devices["Desktop Chrome"],
         launchOptions: {
