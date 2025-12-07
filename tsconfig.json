@@ -10,7 +10,8 @@
     "types": ["node", "@playwright/test"],
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true
+    "noImplicitReturns": true,
+    "noEmit": true
   },
   "include": ["tests/**/*", "helpers/**/*", "fixtures/**/*", "schemas/**/*"],
   "exclude": ["node_modules"]

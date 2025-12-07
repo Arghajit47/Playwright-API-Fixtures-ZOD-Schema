@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:API": "playwright test --grep @API",
-    "test:UI": "playwright test --grep @UI",
+    "test:UI": "echo ui tests are not implemented",
     "report-pulse": "generate-pulse-report"
   },
   "keywords": [
