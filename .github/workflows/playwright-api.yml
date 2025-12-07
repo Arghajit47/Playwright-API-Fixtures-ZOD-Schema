@@ -12,13 +12,16 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 'lts/*'
+          node-version: "lts/*"
       - name: Install dependencies
         run: npm ci
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
         run: npm run test:API
+
+      - name: Generate Pulse report
+        run: npm run report-pulse
       - uses: actions/upload-artifact@v4
         if: always()
         with:
